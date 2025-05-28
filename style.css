@@ -29,7 +29,11 @@ a {
 
 header {
     display: flex;
+    position: sticky;
+    top: 0;
     align-items: center;
+    background: white;
+    z-index: 10;
     justify-content: space-between;
     padding: 10px 5%;
 }
@@ -139,7 +143,7 @@ header .logo h1 {
     /* text-transform: capitalize; */
 }
 .home .left p {
-    font-size: 14px;
+    font-size: 16px;
     color: #999;
 }
 
@@ -324,7 +328,7 @@ footer {
         font-size: 18px;
     }
     .home .left p {
-        font-size: 11px;
+        font-size: 13px;
     }
     .title {
         font-size: 19px;
@@ -340,7 +344,7 @@ footer {
         font-size: 12px;
     }
     .list_about .description p {
-        font-size: 10px;
+        font-size: 13px;
     }
     .form-image .image {
         display: none;
@@ -423,9 +427,20 @@ footer {
     .register.small{
         display: block;
         position: absolute;
-        top: 26.5%;
+        top: 400%;
         right: 50%;
         transform: translateX(50%);
     }
 
 }
+
+/* @media (max-width:400px) {
+    .register.small{
+        top: 27.5%;
+    }
+}
+@media (max-width:360px) {
+    .register.small{
+        top: 30.5%;
+    }
+} */
