@@ -47,9 +47,14 @@ header .logo img {
     transform: scale(1.1);
 }
 header .logo h1 {
-    font-size: 30px;
+    font-size: 27px;
     color: #4f4f4f;
 }
+
+header .logo h1 span{
+    font-size: 22px;
+}
+
 .menu {
     display: flex;
 }
@@ -125,7 +130,7 @@ header .logo h1 {
     box-shadow:  0 0 10px rgba(0,0,0,0.4);
 }
 .home .left h1 {
-    font-size: 100px;
+    font-size: 70px;
     color: var(--primary-color);
     font-weight: 600;
     padding: 0;
