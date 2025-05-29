@@ -298,6 +298,9 @@ footer {
     header .logo h1 {
         font-size: 15px;
     }
+    header .logo h1 span{
+        font-size: 15px;
+    }
     header .logo img {
         width: 30px;
         height: 30px;
@@ -327,7 +330,11 @@ footer {
     }
 
     .home .left h1 {
-        font-size: 60px;
+        font-size: 40px;
+        padding-bottom: 5px;
+    }
+    .home .left p:last-child{
+        display: none;
     }
     .home .left h4 {
         font-size: 18px;
