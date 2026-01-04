@@ -11,186 +11,458 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="RSG Investia">
     <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="">
-            <h1>RSG I<span>NVESTIA</span></h1>
-        </div>
-        <ul class="menu">
-            <li><a href="#" class="state state1">Accueil</a></li>
-            <li><a href="#" class="state state2">Services</a></li>
-            <li><a href="#" class="state state3">A propos</a></li>
-            <li><a href="#" class="state state4">Contacts</a></li>
-        </ul>
-        <div class="log">
-            <!-- http://localhost:3000/auth/register -->
-            <a href="https://investment-crew-portal.vercel.app/auth/register" class="register">
-                <span>S' enregistrer</span>
-            </a>
-            <!-- http://localhost:3000/auth/login -->
-            <a href="https://investment-crew-portal.vercel.app/auth/login" class="login">
-                <span>Connexion</span>
-            </a>
-        </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="RSG Investia Logo">
+                <h1>RSG <span>INVESTIA</span></h1>
+            </div>
 
-        <div class="small_menu">
-            <span>
-                <div></div>
-                <div></div>
-            </span>
-            <span>
-                <div></div>
-                <div></div>
-            </span>
-        </div>
+            <nav class="menu" id="mainMenu">
+                <p><a href="#home" class="state state1">Accueil</a></p>
+                <p><a href="#services" class="state state2">Services</a></p>
+                <p><a href="#about" class="state state3">À propos</a></p>
+                <p><a href="#contact" class="state state4">Contact</a></p>
+            </nav>
 
+            <div class="header-actions">
+                <a onclick="showWhatsAppPopup()" class="btn btn-outline">
+                    <i class="fas fa-user-plus"></i>
+                    <span>S'enregistrer</span>
+                </a>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="disable">Disabled</span>
+            </button>
+        </div>
     </header>
 
+    <!-- Home Section -->
+    <section class="home state1-data" id="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-left">
+                    <div class="badge">
+                        <i class="fas fa-award"></i>
+                        Nouveau sur le marché
+                    </div>
+                    <h1 class="title-animate">
+                        RSG <span class="gradient-text">INVESTIA</span>
+                    </h1>
+                    <h2 class="subtitle">Une Nouvelle Ère d'Investissement Intelligent</h2>
+                    <p class="description">
+                        Découvrez comment notre plateforme optimise vos investissements grâce à l'intelligence
+                        artificielle et à des algorithmes prédictifs de pointe.
+                    </p>
 
-    <!-- home -->
+                    <div class="stats-inline">
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <strong>10,000+</strong>
+                                <span>Utilisateurs actifs</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <strong>98%</strong>
+                                <span>Taux de satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
 
-    <section class="home state1-data">
-        <div class="left">
-            <h1> RSG INVEST<span>IA</span></h1>
-            <h4>Une Nouvelle Ère d'Investissement Intelligent</h4>
-            <p>Découvrez comment notre plateforme optimise</p>
-            <p>vos investissements grâce à l'intelligence artificielle</p>
-            <p>et à des algorithmes prédictifs de pointe.</p>
-            <a class="button-link" href="#">Commencer Maintenant</a>
-        </div>
-        <div class="right">
-            <img src="images/img1.jpg" alt="">
-        </div>
-    </section>
+                    <div class="cta-buttons">
+                        <a href="#services" class="btn btn-primary btn-large">
+                            <span>Commencer Maintenant</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-outline btn-large">
+                            <i class="fas fa-play-circle"></i>
+                            <span>En savoir plus</span>
+                        </a>
+                    </div>
+                </div>
 
-
-    <!-- services -->
-
-    <section class="services">
-        <h1 class="title  state2-data">Les services</h1>
-        <p class="small_title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ad consequatur dolor,
-            nihil id corporis qui, veritatis quos velit adipisci molestiae atque quasi inventore accusantium, unde
-            veniam ut distinctio dicta.</p>
-        <div class="list_service">
-            <div class="serv">
-                <img src="images/image2.png" alt="">
-                <h4>Analyse de marché</h4>
-                <p>(Les tendances clés du marché)</p>
-                <a class="button-link" href="#">VOIR LES ANALYSES</a>
-            </div>
-            <div class="serv">
-                <img src="images/image3.png" alt="">
-                <h4>Investissement rapide</h4>
-                <p>(Vos placements en temps réel)</p>
-                <a class="button-link" href="#">Investir Maintenant </a>
-            </div>
-            <div class="serv">
-                <img src="images/image4.png" alt="">
-                <h4>Portefeuille personnalisé</h4>
-                <p>(Adaptez vos objectifs)</p>
-                <a class="button-link" href="#">CRÉER UN PORTEFEUILLE</a>
-            </div>
-            <div class="serv">
-                <img src="images/image1.png" alt="">
-                <h4>Rendement énergétique</h4>
-                <p>(Investissez vite via des jeux)</p>
-                <a class="button-link" href="#">INVESTIR DURABLEMENT</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- about -->
-
-    <section class="about">
-        <h1 class="title  state3-data">à propos de nous</h1>
-        <div class="list_about">
-            <h1>1</h1>
-            <div class="description">
-                <h3>NOTRE EXPERTISE EN FINANCE</h3>
-                <p>Nous accompagnons les investisseurs débutants comme expérimentés avec des outils performants, <br>
-                    des analyses approfondies et un accompagnement personnalisé. Vos données et vos fonds sont protégés
-                    grâce à des protocoles de sécurité avancés </p>
-            </div>
-        </div>
-        <div class="list_about">
-            <h1>2</h1>
-            <div class="description">
-                <h3>POURQUOI CHOISIR NOTRE PLATEFORME ?</h3>
-                <p>Transparence, performance et sécurité sont les piliers de notre service. Rejoignez une communauté de
-                    milliers d'investisseurs. Une surveillance constante <br> Investissez en toute confiance. Notre
-                    équipe de conseillers financiers est à votre écoute.</p>
-            </div>
-        </div>
-        <div class="list_about">
-            <h1>3</h1>
-            <div class="description">
-                <h3>UNE CROISSANCE GARANTIE ?</h3>
-                <p>Aucun investissement n'est sans risque, mais notre technologie permet une optimisation constante du
-                    rendement. Combiné à notre <br> intelligence artificielle, vous bénéficiez du meilleur des deux
-                    mondes pour prendre vos décisions.</p>
+                <div class="home-right">
+                    <div class="image-wrapper">
+                        <img src="images/img1.jpg" alt="Investissement intelligent">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <strong>+25%</strong>
+                                <span>ROI moyen</span>
+                            </div>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>Sécurisé</strong>
+                                <span>SSL & 2FA</span>
+                            </div>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-chart-bar"></i>
+                            <div>
+                                <strong>24/7</strong>
+                                <span>Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="list_about">
-            <h1>4</h1>
-            <div class="description">
-                <h3>UNE COMMUNAUTÉ D'INVESTISSEURS ENGAGÉS</h3>
-                <p>Rejoignez une plateforme dynamique où des milliers d'investisseurs partagent leurs analyses,
-                    stratégies et retours d'expérience. Que vous soyez novice ou expérimenté, <br> vous pourrez
-                    échanger, apprendre et progresser grâce à une communauté soudée, animée par une passion commune pour
-                    l'investissement.</p>
-            </div>
-        </div>
-        <div class="list_about">
-            <h1>5</h1>
-            <div class="description">
-                <h3>DES OUTILS D'AIDE À LA DÉCISION PERFORMANTS</h3>
-                <p>Prenez des décisions éclairées grâce à une gamme complète d'outils professionnels : simulateurs de
-                    rentabilité, analyse des risques, alertes personnalisées, <br> tableaux de bord interactifs… Notre
-                    technologie est pensée pour vous offrir une visibilité claire sur vos investissements, à chaque
-                    étape.</p>
-            </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>Découvrir</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <!-- contact -->
-    <section class="contact">
-        <h1 class="title state4-data">Contactez nous</h1>
-        <div class="form-image">
-            <form>
-                <input type="text" placeholder="Nom">
-                <input type="text" placeholder="Adresse Mail">
-                <input type="text" placeholder="Objet du Message">
-                <textarea id="" cols="30" rows="10" placeholder="Votre Message"></textarea>
-                <button type="button" class="button-link form_btn">
-                    Envoyer Votre message
-                </button>
-            </form>
-            <div class="image">
-                <img src="images/img2.jpg" alt="">
+    <!-- Services Section -->
+    <section class="services state2-data" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Nos Services</span>
+                <h2 class="section-title">Des Solutions Adaptées à Vos Besoins</h2>
+                <p class="section-description">
+                    Profitez d'une gamme complète de services conçus pour maximiser vos rendements
+                    et sécuriser vos investissements
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/image2.png" alt="Analyse de marché">
+                    </div>
+                    <h3>Analyse de Marché</h3>
+                    <p class="service-subtitle">Les tendances clés du marché</p>
+                    <p class="service-description">
+                        Accédez à des analyses en temps réel et des prévisions basées sur l'IA
+                        pour prendre des décisions éclairées
+                    </p>
+                    <a href="#" class="btn btn-link">
+                        <span>Voir les analyses</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/image3.png" alt="Investissement rapide">
+                    </div>
+                    <h3>Investissement Rapide</h3>
+                    <p class="service-subtitle">Vos placements en temps réel</p>
+                    <p class="service-description">
+                        Investissez en quelques clics avec notre interface intuitive
+                        et suivez vos performances instantanément
+                    </p>
+                    <a href="#" class="btn btn-link">
+                        <span>Investir maintenant</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/image4.png" alt="Portefeuille personnalisé">
+                    </div>
+                    <h3>Portefeuille Personnalisé</h3>
+                    <p class="service-subtitle">Adaptez vos objectifs</p>
+                    <p class="service-description">
+                        Créez un portefeuille sur mesure aligné avec vos objectifs financiers
+                        et votre profil de risque
+                    </p>
+                    <a href="#" class="btn btn-link">
+                        <span>Créer un portefeuille</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/image1.png" alt="Investissement durable">
+                    </div>
+                    <h3>Investissement Ludique</h3>
+                    <p class="service-subtitle">Investissez via des jeux</p>
+                    <p class="service-description">
+                        Découvrez une approche innovante de l'investissement avec nos
+                        solutions gamifiées et engageantes
+                    </p>
+                    <a href="#" class="btn btn-link">
+                        <span>Commencer à jouer</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>Site réalisé par RelouBird | Tous les droits sont réservés.</p>
+    <!-- About Section -->
+    <section class="about state3-data" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">À Propos</span>
+                <h2 class="section-title">Pourquoi Choisir RSG Investia ?</h2>
+                <p class="section-description">
+                    Notre engagement pour votre réussite financière
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-item">
+                    <div class="about-number">01</div>
+                    <div class="about-content">
+                        <h3>Notre Expertise en Finance</h3>
+                        <p>
+                            Nous accompagnons les investisseurs débutants comme expérimentés avec des outils
+                            performants,
+                            des analyses approfondies et un accompagnement personnalisé. Vos données et vos fonds sont
+                            protégés grâce à des protocoles de sécurité avancés.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Outils d'analyse avancés</li>
+                            <li><i class="fas fa-check"></i> Accompagnement personnalisé</li>
+                            <li><i class="fas fa-check"></i> Sécurité maximale</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <div class="about-number">02</div>
+                    <div class="about-content">
+                        <h3>Nos Valeurs Fondamentales</h3>
+                        <p>
+                            Transparence, performance et sécurité sont les piliers de notre service. Rejoignez une
+                            communauté de milliers d'investisseurs. Une surveillance constante. Investissez en toute
+                            confiance. Notre équipe de conseillers financiers est à votre écoute.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> 100% Transparent</li>
+                            <li><i class="fas fa-check"></i> Support 24/7</li>
+                            <li><i class="fas fa-check"></i> Communauté active</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <div class="about-number">03</div>
+                    <div class="about-content">
+                        <h3>Performance Optimisée</h3>
+                        <p>
+                            Aucun investissement n'est sans risque, mais notre technologie permet une optimisation
+                            constante du rendement. Combiné à notre intelligence artificielle, vous bénéficiez du
+                            meilleur des deux mondes pour prendre vos décisions.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> IA prédictive</li>
+                            <li><i class="fas fa-check"></i> Optimisation continue</li>
+                            <li><i class="fas fa-check"></i> Analyses en temps réel</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <div class="about-number">04</div>
+                    <div class="about-content">
+                        <h3>Communauté Engagée</h3>
+                        <p>
+                            Rejoignez une plateforme dynamique où des milliers d'investisseurs partagent leurs analyses,
+                            stratégies et retours d'expérience. Que vous soyez novice ou expérimenté, vous pourrez
+                            échanger, apprendre et progresser.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Forum d'entraide</li>
+                            <li><i class="fas fa-check"></i> Partage d'expérience</li>
+                            <li><i class="fas fa-check"></i> Formation continue</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <div class="about-number">05</div>
+                    <div class="about-content">
+                        <h3>Outils Professionnels</h3>
+                        <p>
+                            Prenez des décisions éclairées grâce à une gamme complète d'outils professionnels :
+                            simulateurs de rentabilité, analyse des risques, alertes personnalisées, tableaux de
+                            bord interactifs… Notre technologie est pensée pour vous offrir une visibilité claire.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Simulateurs avancés</li>
+                            <li><i class="fas fa-check"></i> Alertes intelligentes</li>
+                            <li><i class="fas fa-check"></i> Tableaux de bord</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact state4-data" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Contact</span>
+                <h2 class="section-title">Contactez-Nous</h2>
+                <p class="section-description">
+                    Notre équipe est à votre écoute pour répondre à toutes vos questions
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i>
+                                Nom complet
+                            </label>
+                            <input type="text" id="name" placeholder="Votre nom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                Adresse email
+                            </label>
+                            <input type="email" id="email" placeholder="votre@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i>
+                                Objet du message
+                            </label>
+                            <input type="text" id="subject" placeholder="Sujet de votre message" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i>
+                                Votre message
+                            </label>
+                            <textarea id="message" rows="6" placeholder="Écrivez votre message ici..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span>Envoyer le message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-image">
+                        <img src="images/img2.jpg" alt="Contact RSG Investia">
+                    </div>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+237 678 901 234</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>rsginvestia@mailer.mon-ndem.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>Yaoundé, Cameroun</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="RSG Investia">
+                    <h3>RSG INVESTIA</h3>
+                    <p>Votre partenaire pour un investissement intelligent</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 RSG Investia - Site réalisé par RSG Investia Dev's Team | Tous droits réservés</p>
+            </div>
+        </div>
     </footer>
 
+    <!-- WhatsApp Popup -->
+    <div id="whatsappPopup" class="popup-overlay">
+        <div class="popup-content">
+            <p class="popup-close" onclick="closeWhatsAppPopup()">
+                <i class="fas fa-times"></i>
+            </p>
 
+            <div class="popup-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
 
-    <script>
-        var small_menu = document.querySelector(".small_menu");
-        var menu = document.querySelector(".menu");
-        var register = document.querySelector(".register");
-        small_menu.onclick = function () {
-            small_menu.classList.toggle('active');
-            menu.classList.toggle('small');
-            register.classList.toggle('small');
-        }
-    </script>
+            <h3>Contactez-nous sur WhatsApp</h3>
+            <p>Pour vous inscrire ou obtenir plus d'informations sur nos services d'investissement, contactez notre
+                équipe directement via WhatsApp</p>
+
+            <div class="whatsapp-number">
+                <i class="fab fa-whatsapp"></i>
+                <span>+237 6 XX XX XX XX</span>
+            </div>
+            <!-- <a href="https://wa.me/237XXXXXXXXX?text=Bonjour%2C%20je%20souhaite%20m'inscrire%20sur%20RSG%20Investia"
+                target="_blank" class="btn btn-primary btn-large">
+                <i class="fab fa-whatsapp"></i>
+                <span>Démarrer la conversation</span>
+            </a> -->
+        </div>
+    </div>
 
     <script src="./script.js"></script>
 </body>
